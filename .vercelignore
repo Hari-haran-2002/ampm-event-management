@@ -1,0 +1,10 @@
+# Exclude Python backend files from static deployment
+app.py
+requirements.txt
+Procfile
+.env
+instance/
+templates/
+compile_html.py
+.agents/
+.gemini/

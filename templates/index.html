@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AMPM Event Management & Catering Services | Chennai</title>
+  <meta name="description"
+    content="AMPM Event Management and Catering Services in Chennai. Premium Veg & Non-Veg catering for weddings, birthdays, corporate events. Call 6374330154." />
+  <meta name="keywords"
+    content="catering Chennai, wedding catering Chennai, event management Chennai, AMPM catering, Ayanavaram catering" />
+  <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='images/logo.svg') }}" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&family=Cinzel:wght@400;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+
+<body>
+
+  <!-- PAGE LOADER -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-content">
+      <div class="loader-brand">AMPM</div>
+      <div class="loader-ring"></div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="site-header" id="siteHeader">
+    <!-- Top contact strip -->
+    <div class="header-top-strip">
+      <div class="header-strip-inner">
+        <div class="hts-left">
+          <span class="hts-brand">AMPM Event Management &amp; Catering Services</span>
+        </div>
+        <div class="hts-right">
+          <a href="tel:+916374330154" class="hts-item">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.18 1.18 2 2 0 012.18 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+            </svg>
+            +91 6374330154
+          </a>
+          <div class="hts-sep"></div>
+          <a href="mailto:ampmevents2025@gmail.com" class="hts-item">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+            ampmevents2025@gmail.com
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main nav bar -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-logo">
+        <div class="nav-logo-text">
+          <span class="nav-logo-name">AMPM</span>
+          <span class="nav-logo-sub">Event Management &amp; Catering</span>
+        </div>
+      </div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-active">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#enquiry" class="nav-book-btn">Book Now →</a>
+        <button class="hamburger-btn" onclick="toggleSideMenu()" title="All Sections">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+
+  </header>
+
+  <!-- SIDE MENU OVERLAY -->
+  <div class="side-overlay" id="sideOverlay" onclick="closeSideMenu()"></div>
+
+  <!-- SIDE MENU -->
+  <div class="side-menu" id="sideMenu">
+    <div class="side-menu-header">
+      <div class="side-menu-brand">AMPM</div>
+      <button class="side-close" onclick="closeSideMenu()">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </button>
+    </div>
+    <div class="side-menu-body">
+      <div class="side-section-title">Main</div>
+      <a href="#home" class="side-link" onclick="closeSideMenu()">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+          <polyline points="9 22 9 12 15 12 15 22" />
+        </svg>
+        Home
+      </a>
+      <a href="#about" class="side-link" onclick="closeSideMenu()">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10" />
+          <line x1="12" y1="8" x2="12" y2="12" />
+          <line x1="12" y1="16" x2="12.01" y2="16" />
+        </svg>
+        About Us
+      </a>
+      <a href="#services" class="side-link" onclick="closeSideMenu()">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2L2 7l10 5 10-5-10-5z" />
+          <path d="M2 17l10 5 10-5" />
+          <path d="M2 12l10 5 10-5" />
+        </svg>
+        Services
+      </a>
+
+      <div class="side-section-title">Explore</div>
+      <a href="#menu" class="side-link" onclick="closeSideMenu()">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 2h18v6H3z" />
+          <path d="M3 10h18v6H3z" />
+          <path d="M3 18h18v4H3z" />
+        </svg>
+        Our Menu
+      </a>
+      <a href="#gallery" class="side-link" onclick="closeSideMenu()">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="3" width="18" height="18" rx="2" />
+          <circle cx="8.5" cy="8.5" r="1.5" />
+          <polyline points="21 15 16 10 5 21" />
+        </svg>
+        Gallery
+      </a>
+      <a href="#pricing" class="side-link" onclick="closeSideMenu()">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <line x1="12" y1="1" x2="12" y2="23" />
+          <path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6" />
+        </svg>
+        Pricing
+      </a>
+
+      <div class="side-section-title">More</div>
+      <a href="#reviews" class="side-link" onclick="closeSideMenu()">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
+        </svg>
+        Reviews
+      </a>
+
+      <a href="#location" class="side-link" onclick="closeSideMenu()">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+          <circle cx="12" cy="10" r="3" />
+        </svg>
+        Location
+      </a>
+      <a href="#enquiry" class="side-link" onclick="closeSideMenu()">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path
+            d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.18 1.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+        </svg>
+        Contact Us
+      </a>
+    </div>
+    <div class="side-menu-footer">
+      <a href="tel:+916374330154" class="side-call-btn">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path
+            d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.18 1.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+        </svg>
+        Call +91 6374330154
+      </a>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-particles" id="particles"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Chennai's Premier Catering Service
+      </div>
+      <h1 class="hero-title">
+        <span class="title-main">AMPM</span>
+        <span class="title-sub">Event Management &amp; <em>Catering Services</em></span>
+      </h1>
+      <div class="hero-divider">
+        <span class="divider-line"></span>
+        <svg width="16" height="16" viewBox="0 0 16 16">
+          <polygon points="8,0 10,6 16,6 11,10 13,16 8,12 3,16 5,10 0,6 6,6" fill="#d4af37" />
+        </svg>
+        <span class="divider-line"></span>
+      </div>
+      <p class="hero-tagline">Veg &amp; Non Veg · Making every celebration unforgettable</p>
+      <div class="hero-chips">
+        <span class="chip">💍 Marriage</span>
+        <span class="chip">🎂 Birthday</span>
+        <span class="chip">🏢 Corporate</span>
+        <span class="chip">🌿 Outdoor</span>
+      </div>
+      <div class="hero-actions">
+        <a href="#enquiry" class="btn-gold">Book Your Event</a>
+        <a href="#menu" class="btn-outline">Explore Menu</a>
+      </div>
+
+    </div>
+    <div class="hero-scroll-hint">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <div class="trust-bar">
+    <div class="trust-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#d4af37"
+        stroke-width="2.5">
+        <polyline points="20 6 9 17 4 12" />
+      </svg><span>500+ Events Done</span></div>
+    <div class="trust-sep"></div>
+    <div class="trust-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#d4af37"
+        stroke-width="2.5">
+        <polyline points="20 6 9 17 4 12" />
+      </svg><span>5.0 Google Rating</span></div>
+    <div class="trust-sep"></div>
+    <div class="trust-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#d4af37"
+        stroke-width="2.5">
+        <polyline points="20 6 9 17 4 12" />
+      </svg><span>Veg &amp; Non-Veg</span></div>
+    <div class="trust-sep"></div>
+    <div class="trust-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#d4af37"
+        stroke-width="2.5">
+        <polyline points="20 6 9 17 4 12" />
+      </svg><span>On-Time Delivery</span></div>
+    <div class="trust-sep"></div>
+    <div class="trust-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#d4af37"
+        stroke-width="2.5">
+        <polyline points="20 6 9 17 4 12" />
+      </svg><span>Hygienic Preparation</span></div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="section-inner">
+      <div class="section-eyebrow">Who We Are</div>
+      <h2 class="section-title">Crafting <em>Memories</em><br />Since Day One</h2>
+      <div class="section-rule"></div>
+      <p class="about-text">At <strong>AMPM Event Management and Catering Services</strong>, we specialize in turning
+        your special occasions into unforgettable experiences. From elegant weddings and grand receptions to corporate
+        events, birthday parties, and traditional functions — we handle every detail with perfection and care.</p>
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <div class="about-num">01</div>
+          <div class="about-icon">🍽</div>
+          <h3>Premium Catering</h3>
+          <p>Authentic flavours, hygienic preparation, customized for every budget.</p>
+        </div>
+        <div class="about-card reveal">
+          <div class="about-num">02</div>
+          <div class="about-icon">🎪</div>
+          <h3>Complete Solutions</h3>
+          <p>Decoration, planning, and seamless execution by our expert team.</p>
+        </div>
+        <div class="about-card reveal">
+          <div class="about-num">03</div>
+          <div class="about-icon">⭐</div>
+          <h3>100% Satisfaction</h3>
+          <p>Timely service and beautiful presentation — every single time.</p>
+        </div>
+      </div>
+      <div class="about-quote">
+        <div class="quote-mark">"</div>
+        <blockquote>You celebrate the moment — <em>we take care of everything.</em></blockquote>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- SERVICES -->
+  <section class="section" id="services">
+    <div class="section-inner">
+      <div class="section-eyebrow">What We Do</div>
+      <h2 class="section-title">Our <em>Services</em></h2>
+      <div class="section-rule"></div>
+      <div class="services-grid">
+        <div class="service-card reveal sc-marriage">
+          <div class="sc-num">01</div>
+          <div class="sc-icon">💍</div>
+          <h3>Marriage Catering</h3>
+          <p>Grand feasts crafted for your most special day with warmth and love.</p>
+          <div class="sc-arrow">→</div>
+        </div>
+        <div class="service-card reveal sc-birthday">
+          <div class="sc-num">02</div>
+          <div class="sc-icon">🎂</div>
+          <h3>Birthday Parties</h3>
+          <p>Fun menus and beautiful setups for kids and adults alike.</p>
+          <div class="sc-arrow">→</div>
+        </div>
+        <div class="service-card reveal sc-outdoor">
+          <div class="sc-num">03</div>
+          <div class="sc-icon">🌳</div>
+          <h3>Outdoor Events</h3>
+          <p>Full catering and setup for open-air celebrations anywhere.</p>
+          <div class="sc-arrow">→</div>
+        </div>
+        <div class="service-card reveal sc-corporate">
+          <div class="sc-num">04</div>
+          <div class="sc-icon">🤝</div>
+          <h3>Corporate Events</h3>
+          <p>Professional gatherings, reunions and all special occasions.</p>
+          <div class="sc-arrow">→</div>
+        </div>
+        <div class="service-card reveal sc-food">
+          <div class="sc-num">05</div>
+          <div class="sc-icon">🥗</div>
+          <h3>Veg &amp; Non-Veg</h3>
+          <p>A rich spread of authentic dishes for every palate.</p>
+          <div class="sc-arrow">→</div>
+        </div>
+        <div class="service-card reveal sc-management">
+          <div class="sc-num">06</div>
+          <div class="sc-icon">🎪</div>
+          <h3>Event Management</h3>
+          <p>Complete planning, decoration and management from start to finish.</p>
+          <div class="sc-arrow">→</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="section section-alt" id="menu">
+    <div class="section-inner">
+      <div class="section-eyebrow">What We Serve</div>
+      <h2 class="section-title">Our <em>Menu</em></h2>
+      <div class="section-rule"></div>
+      <div id="menu-root"></div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section" id="gallery">
+    <div class="section-inner">
+      <div class="section-eyebrow">Our Work</div>
+      <h2 class="section-title">Photo <em>Gallery</em></h2>
+      <div class="section-rule"></div>
+      <div class="gallery-tabs">
+        <button class="gtab active" onclick="filterGallery('all',event)">All</button>
+        <button class="gtab" onclick="filterGallery('wedding',event)">Wedding</button>
+        <button class="gtab" onclick="filterGallery('food',event)">Food</button>
+        <button class="gtab" onclick="filterGallery('events',event)">Events</button>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item reveal" data-cat="wedding" onclick="openLight(0)">
+          <div class="gi-inner">💍</div>
+          <div class="gi-overlay"><span>Marriage Catering</span></div>
+        </div>
+        <div class="gallery-item reveal" data-cat="food" onclick="openLight(1)">
+          <div class="gi-inner">🍽</div>
+          <div class="gi-overlay"><span>Saapadu Feast</span></div>
+        </div>
+        <div class="gallery-item reveal" data-cat="events" onclick="openLight(2)">
+          <div class="gi-inner">🎂</div>
+          <div class="gi-overlay"><span>Birthday Setup</span></div>
+        </div>
+        <div class="gallery-item reveal" data-cat="food" onclick="openLight(3)">
+          <div class="gi-inner">🥘</div>
+          <div class="gi-overlay"><span>Veg Spread</span></div>
+        </div>
+        <div class="gallery-item reveal" data-cat="events" onclick="openLight(4)">
+          <div class="gi-inner">🎪</div>
+          <div class="gi-overlay"><span>Outdoor Event</span></div>
+        </div>
+        <div class="gallery-item reveal" data-cat="wedding" onclick="openLight(5)">
+          <div class="gi-inner">🌸</div>
+          <div class="gi-overlay"><span>Reception Decor</span></div>
+        </div>
+        <div class="gallery-item reveal" data-cat="food" onclick="openLight(6)">
+          <div class="gi-inner">🍛</div>
+          <div class="gi-overlay"><span>Non-Veg Special</span></div>
+        </div>
+        <div class="gallery-item reveal" data-cat="events" onclick="openLight(7)">
+          <div class="gi-inner">🎉</div>
+          <div class="gi-overlay"><span>Get-Together</span></div>
+        </div>
+        <div class="gallery-item reveal" data-cat="wedding" onclick="openLight(8)">
+          <div class="gi-inner">✨</div>
+          <div class="gi-overlay"><span>Semantham</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="section section-alt" id="pricing">
+    <div class="section-inner">
+      <div class="section-eyebrow">Our Packages</div>
+      <h2 class="section-title">Simple <em>Pricing</em></h2>
+      <div class="section-rule"></div>
+      <div class="pricing-grid">
+        <div class="pricing-card reveal">
+          <div class="pc-tier">Starter</div>
+          <div class="pc-icon">🥗</div>
+          <h3>Basic Package</h3>
+          <p>Perfect for small gatherings and intimate celebrations</p>
+          <ul class="pc-features">
+            <li>50–150 Guests</li>
+            <li>Full Custom Menu</li>
+            <li>Serving Staff</li>
+            <li>Basic Setup</li>
+          </ul>
+          <a href="#enquiry" class="pc-btn">Get Quote</a>
+        </div>
+        <div class="pricing-card pricing-featured reveal">
+          <div class="pc-popular">Most Popular</div>
+          <div class="pc-tier">Premium</div>
+          <div class="pc-icon">🍽</div>
+          <h3>Classic Package</h3>
+          <p>Most chosen for weddings, birthdays and family events</p>
+          <ul class="pc-features">
+            <li>150–500 Guests</li>
+            <li>Full Custom Menu</li>
+            <li>Full Staff Team</li>
+            <li>Banana Leaf Service</li>
+          </ul>
+          <a href="#enquiry" class="pc-btn pc-btn-gold">Get Quote</a>
+        </div>
+        <div class="pricing-card reveal">
+          <div class="pc-tier">Royal</div>
+          <div class="pc-icon">👑</div>
+          <h3>Grand Package</h3>
+          <p>For large scale events and grand celebrations</p>
+          <ul class="pc-features">
+            <li>500+ Guests</li>
+            <li>Full Custom Menu</li>
+            <li>Large Staff Team</li>
+            <li>Event Coordination</li>
+          </ul>
+          <a href="#enquiry" class="pc-btn">Get Quote</a>
+        </div>
+      </div>
+      <p class="pricing-note">* All prices customized based on menu, location and guest count. Contact us for exact
+        pricing.</p>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="section" id="reviews">
+    <div class="section-inner">
+      <div class="section-eyebrow">Client Testimonials</div>
+      <h2 class="section-title">What Clients <em>Say</em></h2>
+      <div class="section-rule"></div>
+      <div class="reviews-header-bar">
+        <div class="rating-big">5.0</div>
+        <div>
+          <div class="rating-stars">★★★★★</div>
+          <div class="rating-sub">Based on Google Reviews · 100% Satisfaction</div>
+        </div>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card reveal">
+          <div class="review-quote">"</div>
+          <p class="review-text">We had an excellent experience with AMPM event management and catering service. The
+            food was absolutely delicious and appreciated by all our guests. They were very punctual and ensured
+            everything was delivered and arranged on time. Highly recommended!</p>
+          <div class="review-footer">
+            <div class="reviewer-avatar">S</div>
+            <div>
+              <div class="reviewer-name">Sudharsan Suri</div>
+              <div class="reviewer-stars">★★★★★ <span>Google Review</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="review-card reveal">
+          <div class="review-quote">"</div>
+          <p class="review-text">The quality of work, reliability and service was excellent. The events management team
+            is patient, listening carefully to our requirements and doing work to the best service. Clean and neat work.
+            We're happy with their service.</p>
+          <div class="review-footer">
+            <div class="reviewer-avatar">B</div>
+            <div>
+              <div class="reviewer-name">Bee Hive Preschool</div>
+              <div class="reviewer-stars">★★★★★ <span>Google Review</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="review-card review-cta reveal">
+          <div class="review-cta-stars">★★★★★</div>
+          <p>Had a great experience? Share your review and help others find us!</p>
+          <a href="https://g.page/r/YOUR_GOOGLE_REVIEW_LINK" target="_blank" class="pc-btn-gold"
+            style="display:inline-block;padding:10px 24px;border-radius:6px;text-decoration:none;font-size:0.8rem;font-weight:600;margin-top:4px">Write
+            a Review</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- CONTACT STRIP -->
+  <div class="contact-strip">
+    <div class="cs-item">
+      <div class="cs-icon">📞</div>
+      <div><strong>Call Us Anytime</strong><span>Rohith.A · <a href="tel:+916374330154"
+            style="color:inherit;text-decoration:none;">6374330154</a></span></div>
+    </div>
+    <div class="cs-sep"></div>
+    <div class="cs-item">
+      <div class="cs-icon">📍</div>
+      <div><strong>Our Location</strong><span>No.62/12, P.E. Koil Street, Ayanavaram, Chennai – 600 023</span></div>
+    </div>
+    <div class="cs-sep"></div>
+    <div class="cs-item">
+      <div class="cs-icon">🕐</div>
+      <div><strong>Working Hours</strong><span>Open 24/7</span></div>
+    </div>
+  </div>
+
+  <!-- GOOGLE MAP -->
+  <section class="section section-alt" id="location">
+    <div class="section-inner">
+      <div class="section-eyebrow">Find Us</div>
+      <h2 class="section-title">Our <em>Location</em></h2>
+      <div class="section-rule"></div>
+      <div class="map-container">
+        <div class="map-info-bar">
+          <div class="map-info-item">
+            <div class="map-info-icon">📍</div>
+            <div>
+              <strong>Address</strong>
+              <span>No.62/12, P.E. Koil Street, North Mada Street,<br />Ayanavaram, Chennai – 600 023</span>
+            </div>
+          </div>
+          <div class="map-info-sep"></div>
+          <div class="map-info-item">
+            <div class="map-info-icon">📞</div>
+            <div>
+              <strong>Phone</strong>
+              <span><a href="tel:+916374330154">+91 6374330154</a></span>
+            </div>
+          </div>
+          <div class="map-info-sep"></div>
+          <div class="map-info-item">
+            <div class="map-info-icon">🕐</div>
+            <div>
+              <strong>Hours</strong>
+              <span>Open 24/7</span>
+            </div>
+          </div>
+          <div class="map-info-sep"></div>
+          <a href="https://maps.google.com/?q=No.62/12+P.E.+Koil+Street+Ayanavaram+Chennai" target="_blank"
+            class="map-directions-btn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="3 11 22 2 13 21 11 13 3 11" />
+            </svg>
+            Get Directions
+          </a>
+        </div>
+        <div class="map-frame">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.3974638773!2d80.22198931482!3d13.107235690779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265ea7b9a7b55%3A0x6a8f3c1a2e4b5d6c!2sAyanavaram%2C%20Chennai%2C%20Tamil%20Nadu%20600023!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" title="AMPM Event Management Location">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENQUIRY -->
+  <section class="section" id="enquiry">
+    <div class="section-inner">
+      <div class="section-eyebrow">Get In Touch</div>
+      <h2 class="section-title">Book Your <em>Event</em></h2>
+      <div class="section-rule"></div>
+      <div class="form-card">
+        <div id="successMsg" style="display:none;text-align:center;padding:40px 20px">
+          <div class="success-ring"><svg viewBox="0 0 36 36" width="36" height="36">
+              <polyline class="success-check" points="6,18 14,26 30,10" />
+            </svg></div>
+          <div class="success-eyebrow">Enquiry Received</div>
+          <h3 class="success-title">Thank You for <em>Choosing AMPM!</em></h3>
+          <p class="success-sub">Your enquiry has been submitted. We'll contact you within <strong>24 hours</strong>.
+          </p>
+          <div class="success-steps">
+            <div class="ss-item">
+              <div class="ss-num">01</div>
+              <div class="ss-text"><strong>Enquiry Received</strong> — We've got your details</div>
+            </div>
+            <div class="ss-item">
+              <div class="ss-num">02</div>
+              <div class="ss-text"><strong>Team Review</strong> — We'll review your requirements</div>
+            </div>
+            <div class="ss-item">
+              <div class="ss-num">03</div>
+              <div class="ss-text"><strong>We Call You</strong> — Rohith contacts you within 24 hrs</div>
+            </div>
+            <div class="ss-item">
+              <div class="ss-num">04</div>
+              <div class="ss-text"><strong>Event Planned</strong> — Let's make it unforgettable!</div>
+            </div>
+          </div>
+          <button class="btn-gold" onclick="resetForm()">Submit Another Enquiry</button>
+        </div>
+        <form id="enquiryForm" action="https://formspree.io/f/8ba875b2-240e-4988-94e8-85d364ac650b" method="POST">
+          <!-- Formspree Integration -->
+          <input type="hidden" name="_subject" value="New Event Enquiry from AMPM Website">
+          <div class="form-grid">
+            <div class="form-group"><label>Full Name *</label><input type="text" name="name" placeholder="Your Name"
+                required /></div>
+            <div class="form-group"><label>Mobile Number *</label><input type="tel" name="mobile"
+                placeholder="+91 XXXXX XXXXX" required /></div>
+            <div class="form-group"><label>Email Address</label><input type="email" name="email"
+                placeholder="you@example.com" /></div>
+            <div class="form-group">
+              <label>Event Type</label>
+              <select name="event_type">
+                <option value="">Select Event</option>
+                <option>Marriage / Wedding</option>
+                <option>Birthday Party</option>
+                <option>Outdoor Event</option>
+                <option>Get-Together</option>
+                <option>Corporate Event</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group"><label>Event Date</label><input type="date" name="event_date" /></div>
+            <div class="form-group"><label>No. of Guests</label><input type="number" name="guests"
+                placeholder="e.g. 150" min="1" /></div>
+            <div class="form-group full"><label>Additional Requirements</label><textarea name="message"
+                placeholder="Menu preferences, venue, special requests..."></textarea></div>
+            <div class="form-group full"><button type="submit" class="submit-btn">Send Enquiry →</button></div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-col footer-main">
+        <div class="footer-logo">AMPM</div>
+        <p class="footer-desc">Making every celebration unforgettable with authentic flavours and professional service
+          in Chennai.</p>
+        <div class="footer-socials">
+          <a href="https://wa.me/916374330154" target="_blank" class="fsoc fsoc-wa" title="WhatsApp">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM11.5 2.5C6.261 2.5 2 6.761 2 12c0 1.826.487 3.535 1.338 5.004L2 22l5.132-1.348A9.455 9.455 0 0011.5 21.5c5.239 0 9.5-4.261 9.5-9.5S16.739 2.5 11.5 2.5z" />
+            </svg>
+          </a>
+          <a href="https://www.facebook.com" target="_blank" class="fsoc fsoc-fb" title="Facebook">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+            </svg>
+          </a>
+          <a href="https://www.instagram.com" target="_blank" class="fsoc fsoc-ig" title="Instagram">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+            </svg>
+          </a>
+          <a href="tel:+916374330154" class="fsoc fsoc-call" title="Call">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.18 1.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Quick Links</div>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#menu">Our Menu</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#enquiry">Book Now</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Contact Us</div>
+        <ul class="footer-contact">
+          <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.18 1.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+            </svg><a href="tel:+916374330154">+91 6374330154</a></li>
+          <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg><a href="mailto:ampmevents2025@gmail.com">ampmevents2025@gmail.com</a></li>
+          <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg><span>No.62/12, P.E. Koil Street,<br />Ayanavaram, Chennai – 600 023</span></li>
+          <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="12 6 12 12 16 14" />
+            </svg><span>Mon–Sun · 8:00 AM – 9:00 PM</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 AMPM Event Management &amp; Catering Services · Chennai, Tamil Nadu · All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP DIRECT LINK -->
+  <div class="wa-popup-wrap">
+    <a href="https://wa.me/916374330154" target="_blank" class="wa-float-btn" id="waFloatBtn"
+      style="text-decoration:none;">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="26" height="26">
+        <path fill="#fff"
+          d="M16 2C8.28 2 2 8.28 2 16c0 2.44.65 4.73 1.79 6.72L2 30l7.5-1.96A13.93 13.93 0 0016 30c7.72 0 14-6.28 14-14S23.72 2 16 2z" />
+        <path fill="#25D366"
+          d="M16 4C9.37 4 4 9.37 4 16c0 2.3.62 4.45 1.7 6.3L4.5 27.5l5.3-1.38A11.94 11.94 0 0016 28c6.63 0 12-5.37 12-12S22.63 4 16 4z" />
+        <path fill="#fff"
+          d="M21.9 19.07c-.28-.14-1.66-.82-1.92-.91-.26-.1-.44-.14-.63.14-.19.28-.72.91-.88 1.1-.16.19-.33.21-.61.07-.28-.14-1.18-.44-2.25-1.39-.83-.74-1.39-1.66-1.55-1.94-.16-.28-.02-.43.12-.57.13-.13.28-.33.42-.5.14-.17.19-.28.28-.47.1-.19.05-.36-.02-.5-.07-.14-.63-1.52-.86-2.08-.23-.55-.46-.47-.63-.48-.16-.01-.35-.01-.54-.01-.19 0-.5.07-.76.36-.26.28-1 1-.97 2.43.03 1.43 1.04 2.81 1.19 3 .14.19 2.03 3.17 4.98 4.32.7.27 1.24.43 1.66.55.7.19 1.34.16 1.84.1.56-.07 1.73-.71 1.97-1.39.24-.68.24-1.27.17-1.39-.07-.12-.25-.19-.53-.33z" />
+      </svg>
+    </a>
+  </div>
+
+  <!-- FLOATING HOME BUTTON -->
+  <a href="#home" class="home-float-btn" title="Back to Home">
+    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+      stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+      <polyline points="9 22 9 12 15 12 15 22" />
+    </svg>
+  </a>
+
+  <!-- SCROLL TOP -->
+  <button class="scroll-top-btn" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+      stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15" />
+    </svg>
+  </button>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" onclick="closeLight()">
+    <button class="lb-close" onclick="closeLight()">✕</button>
+    <button class="lb-prev" onclick="event.stopPropagation();changeLight(-1)">‹</button>
+    <div class="lb-content" onclick="event.stopPropagation()">
+      <div class="lb-icon" id="lightIcon">💍</div>
+      <div class="lb-caption" id="lightCaption">Marriage Catering</div>
+    </div>
+    <button class="lb-next" onclick="event.stopPropagation();changeLight(1)">›</button>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+
+</html>
