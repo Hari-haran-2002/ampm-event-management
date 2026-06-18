@@ -78,21 +78,15 @@ document.getElementById('enquiryForm').addEventListener('submit', async function
   btn.disabled = true;
   const formData = new FormData(this);
   try {
-    const res = await fetch('https://formspree.io/f/8ba875b2-240e-4988-94e8-85d364ac650b', {
-      method: 'POST',
-      body: formData,
-      headers: {
-        'Accept': 'application/json'
-      }
-    });
-    if (res.ok) {
+    const res = await fetch('/submit', { method: 'POST', body: formData });
+    const data = await res.json();
+    if (data.success) {
       this.reset();
       document.getElementById('enquiryForm').style.display = 'none';
       document.getElementById('successMsg').style.display = 'block';
       document.getElementById('successMsg').scrollIntoView({ behavior: 'smooth' });
     } else {
-      const data = await res.json();
-      showToast(data.error || 'Something went wrong. Please try again.', false);
+      showToast(data.message, false);
     }
   } catch { showToast('Something went wrong. Please try again.', false); }
   btn.textContent = 'Send Enquiry →';

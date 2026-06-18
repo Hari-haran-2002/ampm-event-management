@@ -13,7 +13,12 @@ load_dotenv()
 app = Flask(__name__)
 
 # ── DATABASE ──────────────────────────────────────────────────
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("LOCAL_DB")
+db_url = os.environ.get("DATABASE_URL") or os.environ.get("LOCAL_DB")
+if db_url and db_url.startswith("mysql://"):
+    db_url = db_url.replace("mysql://", "mysql+pymysql://", 1)
+elif db_url and db_url.startswith("postgres://"):
+    db_url = db_url.replace("postgres://", "postgresql://", 1)
+app.config['SQLALCHEMY_DATABASE_URI'] = db_url
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
@@ -138,19 +143,14 @@ def submit():
     db.session.commit()
     print(">>> Enquiry saved to DB!")
 
-    # ── Send emails in background thread ──────────────────────
-    def send_emails():
-        try:
-            print(">>> Email thread started...")
-            send_alert_to_owner(data)
-            send_confirmation_to_client(data)
-            print(">>> All emails done!")
-        except Exception as e:
-            print(f">>> Email thread error: {e}")
-
-    thread = threading.Thread(target=send_emails)
-    thread.daemon = True
-    thread.start()
+    # ── Send emails synchronously (required for Serverless) ────
+    try:
+        print(">>> Sending enquiry emails...")
+        send_alert_to_owner(data)
+        send_confirmation_to_client(data)
+        print(">>> All emails sent successfully!")
+    except Exception as e:
+        print(f">>> Email sending error: {e}")
     # ──────────────────────────────────────────────────────────
 
     return jsonify({"success": True, "message": "Thank you! Check your email for confirmation."})
